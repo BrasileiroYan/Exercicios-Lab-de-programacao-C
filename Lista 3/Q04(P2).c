@@ -10,17 +10,17 @@ int main(){   //comparação sem função strcmp()
     printf("Digite a string 1: ");
     fgets(str1, TAM, stdin);
 
-    int tam1 = strlen(str1);
-    if(str1[tam1-1] == '\n'){
-        str1[tam1-1] = '\0';
+    int tam1 = strlen(str1) - 1;
+    if(str1[tam1] == '\n'){
+        str1[tam1] = '\0';
     }
 
     printf("Digite a string 2: ");
     fgets(str2, TAM, stdin);
 
-    int tam2 = strlen(str2);
-    if(str2[tam2-1] == '\n'){
-        str2[tam2-1] = '\0';
+    int tam2 = strlen(str2) - 1;
+    if(str2[tam2] == '\n'){
+        str2[tam2] = '\0';
     }
 
     int iguais = 1;
